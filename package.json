@@ -1,0 +1,11 @@
+{
+  "name": "nutritrack-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && .venv/bin/python3 -m uvicorn app.main:app --reload --port 8000",
+    "seed:backend": "cd backend && .venv/bin/python3 -m app.scripts.seed"
+  }
+}
